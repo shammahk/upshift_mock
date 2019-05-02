@@ -63,7 +63,7 @@ header div.logo span {
 
 header div.list .join {
     background-color: rgb(200, 214, 228, 0.4);
-    color: blue;
+    color: rgb(71, 133, 246);
     height: 50px;
     width: 100px;
     margin: 10px 0 0;
@@ -118,7 +118,7 @@ section.first > .cont input[type=tel]{
     border: none;
     background-color: transparent;
     height: 40px;
-    border-left: solid 2px blue;
+    border-left: solid 2px rgb(71, 133, 246);
     border-bottom: solid 1px gray;
     padding: 0 0 3px 5px;
 }
@@ -140,15 +140,17 @@ section.second {
     padding-top: 200px;
 }
 
-section.second .borderbtm {
+section.second .borderbtm, 
+section.fifth .borderbtm ,
+section.sixth div.borderbtm {
     margin: 0 auto ;
     border-bottom: solid 2.5px mediumspringgreen;
     width: 50px;
 }
 
-section.second > div.txt {
+section.second > div.txt, section.fifth div.txt {
     margin: 0 auto 100px;
-    width: 400px;
+    width: 500px;
     text-align: center;
 }
 
@@ -204,15 +206,477 @@ p {
 }
 
 section.third {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     position: relative;
 }
 
-section.third div.activity {
+section.third div.activity, section.fifth div.activity {
     height: 200px;
     background-color: #fff;
     box-shadow: 30px 30px 30px 0px rgba(168, 167, 167, 0.5);
     width: 80%;
     margin: -100px auto 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.acticon {
+    width: 100%;
+    height: 100%;
+}
+
+section.third div.activity > div, 
+section.third div.delivery div.dev,
+section.seventh div.cards div.benefit {
+    display: flex;
+
+}
+
+section.third div.activity span.icon, 
+section.third div.delivery div.dev div.icon, 
+section.fifth div.activity .icon,
+section.seventh div.cards div.benefit div.icon,
+section.eight div.bottom div.nav .icon,
+section.eight footer span.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px 0px rgba(168, 167, 167, 0.5);
+}
+
+section.third div.activity span.icon .blue, 
+section.third div.delivery div.dev div.icon .blue ,
+section.fifth div.activity .acticon.blue,
+section.seventh div.cards div.benefit div.icon .blue,
+section.eight div.bottom div.nav .icon .blue{
+    background: rgb(71, 133, 246);
+}
+
+section.third div.activity span.icon .green, 
+section.third div.delivery div.dev div.icon .green,
+section.seventh div.cards div.benefit div.icon .green{
+    background: rgb(88, 202, 168);
+}
+
+section.third div.activity span.icon .yellow, section.third div.delivery div.dev div.icon .yellow{
+    background: rgb(248, 197, 70);
+}
+
+.txt.small, 
+section.third div.delivery div.dev div.text ,
+section.seventh div.cards div.benefit div.text{
+    /* text-align: center; */
+    margin-top: -10px;
+}
+
+.txt.small h5 {
+    margin-bottom: 0;
+}
+
+section.third div.delivery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    padding: 0 50px;
+}
+
+section.third div.delivery div.first {
+    margin-top: -30px;
+}
+
+section.third div.delivery div.borderbtm, 
+section.fourth div.cont div.left div.borderbtm,
+section.seventh div.cards div.borderbtm  {
+    width: 50px;
+    border-bottom: solid 2.5px rgb(88, 202, 168);
+}
+
+section.third div.map {
+    background-image: url(../img/new_map.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 90%;
+    height: 60%;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+section.third div.map input[type=text] {
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    margin: 30px 50px;
+    padding: 20px 30px;;
+    font-size: 0.8em;
+    box-sizing: border-box;
+    color: rgb(143, 147, 158);
+    background: white;
+}
+
+section.third div.buttons {
+    display: flex;
+    flex-flow: column;
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    right: 50px;
+}
+
+section.third div.buttons button.top, 
+section.third div.buttons button.bottom {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 2px;
+    margin-top: 0;
+    background: white;
+    border: none;
+}
+
+section.third div.map div.btmright {
+    width: 350px;
+    height: 70px;
+    background: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1em;
+}
+
+section.third div.map div.btmright span.blu {
+    color: rgb(71, 133, 246);
+    line-height: 50px;
+}
+button:hover {
+    background: #4785f6;
+}
+
+section.fourth {
+    height: 150vh;
+    background: rgb(24, 46, 87);
+}
+
+section.fourth div.cont {
+    width: 100%;
+    transform: translate(0, 400px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+section.fourth div.cont div.left {
+    padding: 0 50px;
+    width: 50%;
+    margin-left: 150px;
+    color: white;
+}
+
+section.fourth div.cont div.left  p {
+    color: white;
+} 
+
+section.fourth div.cont div.left  hr{
+    color: rgba(52, 71, 111, 0.8);
+}
+
+section.fourth div.cont div.left div.author {
+    height: 40px;
+}
+
+section.fourth div.cont div.left .pimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(../img/profile_jorge.PNG);
+    background-size: cover;
+    float: left;
+    margin: -5px 10px 0 0;
+}
+
+section.fourth div.cont div.right {
+    margin-right: 10px;
+    padding-right: 10px;
+    height: 165%;
+    width: 100%;
+}
+
+section.fourth div.cont div.right div.img1 {
+    width: 80%;
+    height: 55%;
+    background-image: url(../img/car_ext.PNG);
+    background-size: cover;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+section.fourth div.cont div.right .img2 {
+    width: 50%;
+    height: 40%;
+    background-image: url(../img/Car_int1.PNG);
+    background-size: cover;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+section.fourth div.cont div.right span.img3 {
+    width: 45%;
+    height: 30%;
+    background-image: url(../img/Car_int2.PNG);
+    background-size: cover;
+    display: inline-block;
+    transform: translate(0, -70px);
+}
+
+section.fifth {
+    height: 110vh;
+    background-color: rgb(244, 249, 255);
+    padding-top: 150px;
+}
+
+section.fifth div.cards {
+    display: flex;
+    height: 55%;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+
+section.fifth div.cards div.card {
+    border: solid 1px rgb(217, 221, 230);
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+}
+
+section.fifth div.cards div.card h6 { 
+    color: #4785f6;
+    font-size: 0.48em;
+}
+
+section.fifth div.cards div.card .price {
+    color: #4785f6;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+section.fifth div.cards div.card hr,
+section.seventh div.cards div.benefit hr {
+    color: rgba(119, 119, 119, 0.5);
+}
+
+section.fifth div.cards div.card button,
+section.eight div.top button  {
+    background: rgb(38, 193, 149);
+    border-radius: 30px;
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 0.6em;
+}
+
+section.fifth div.cards div.card a {
+    text-decoration: none;
+    font-size: 0.6em;
+}
+
+section.fifth div.cards div.card:hover {
+    border-top: 2.5px solid #4785f6;
+    box-shadow: 30px 30px 30px 0px rgba(168, 167, 167, 0.5);
+    transform: scale(1.05);
+    border-right: none;
+    border-bottom: none;
+    /* border-left: n; */
+}
+
+section.fifth div.activity {
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 30px 30px 30px 0px rgba(168, 167, 167, 0.5);
+    width: 80%;
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sixth {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+section.sixth div.driver {
+    width: 40%;
+    height: 120%;
+    background: url(../img/driver.PNG) no-repeat;
+    background-size: contain;
+    transform: translate(50px, 100px);
+    /* display: inline-block; */
+}
+
+section.sixth #text {
+    width: 70%;
+    height: 150%;
+    background-color: white;
+    transform: translate(0, 100px);
+    padding: 100px 20px 0;
+    box-sizing: border-box;
+}
+
+section.sixth #text div.txt {
+    text-align: center;
+}
+
+section.sixth #text div.txt p.quote {
+    font-size: 1.5em;
+    line-height: 30px;
+}
+
+section.seventh {
+    background-color: rgb(246, 247, 249);
+    height: 130vh;
+}
+
+section.seventh div.cards {
+    display: grid;
+    height: 50%;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    transform: translate(0, 350px);
+    padding: 60px 80px 0 100px;
+    box-sizing: border-box;
+}
+
+section.seventh div.cards div.text h3 {
+    margin-top: 30px;
+    line-height: 30px;
+    font-size: 1.4em;
+}
+
+section.seventh div.cards div.benefit div.text h5 {
+    margin-bottom: 30px;
+}
+
+section.seventh div.cards div.benefit div.text p {
+    transform: translate(-55px);
+}
+
+section.seventh div.cards div.benefit div.text hr{
+    width: 120%;
+    transform: translate(-55px);
+    color: rgba(119, 119, 119, 0.3);
+}
+
+section.eight {
+    background: rgb(24, 43, 83);
+    height: 70vh;
+    padding: 70px 150px;
+}
+
+section.eight div.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+section.eight div.top h2 {
+    color: white;
+    line-height: 30px;
+    width: 70%;
+}
+
+section.eight div.top button {
+    width: 25%;
+}
+
+section.eight div.bottom {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    column-gap: 50px;
+    padding-left: 0px;
+    width: 100%;
+}
+
+section.eight div.bottom div.nav p,
+section.eight footer span.copy p{
+    color: #dadada;
+}
+
+section.eight div.bottom div.nav p:first-of-type  {
+    font-size: 0.5em;
+    color: #bbbbbb;
+}
+
+section.eight div.bottom div.nav .btn {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: none;
+    color: white;
+    padding: 0 0 0 40px;
+    box-sizing: border-box;
+}
+
+section.eight div.bottom div.nav .btn span:first-of-type {
+    width: 90%;
+
+}
+
+section.eight div.bottom div.nav .btn span:first-of-type input[type=email]{
+    border: none;
+    background: transparent;
+    font-size: 0.7.5em;
+    color: #dadada;
+    width: 100%;
+}
+
+section.eight div.bottom div.nav .icon {
+    box-shadow: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+}
+
+section.eight footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px; 
+    margin-top: 20px;
+}
+
+section.eight footer span.logo {
+    color: white;
+}
+
+section.eight footer span.icons {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    height: 50%;
+}
+
+section.eight footer span.icons span.icon {
+    box-shadow: none;
 }
